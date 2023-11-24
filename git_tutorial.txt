@@ -1,0 +1,33 @@
+Version control systems are software that help track changes make in code over time. As a developer edits code, the version control system takes a snapshot of the files. It then saves that snapshot permanently so it can be recalled later if needed
+
+
+Version control system to keep track of different version of your software
+Use case : suppose you face a bug when you have updated the project so you need to revert back to previous version which can only be possible if the old version is stored somewhere . This is where the git comes into picture which keep tracks of all different versions 
+
+Ex: For example we have a project with version 1.2.5 and we made some changes and deployed a new version 1.2.6 . Due to unforeseen issues there causes a bug   so immediately you have to revert back changes to 1.2.5 version in order to avoid downtime of you application
+
+Repository -- Project folder or a package which contains all your code files and dependencies
+
+Function: save the changes and keep track of versions
+
+Remote Repository : repository stored remotely on some server or any other cloud providers
+Ex: bitbucket , azure devops etc ,git lab,github
+
+Github is one example of remote repository hosting service
+
+Local Repository: the local machine on which your code or project is developed is called local repository
+
+Staging area: The staging area is like a rough draft space, it's where you can git add the version of a file or multiple files that you want to save in your next commit (in other words in the next version of your project).
+
+Note that you can copy versions of files into the staging area and also take them out of the staging area before you make your commit which is why I referred to it as a rough draft space.
+
+
+What the git add command actually does is copy that version of your file from your working directory to the staging area.
+
+The journey a file takes to have an updated version of it added to your repository:
+
+1) It is edited in your working directory. The working directory is like a work bench it is where you edit your files, add new files and delete files.
+2) Then the file is added to the staging area using the git add command
+3) Finally it is included in the next commit when you use the git commit command
+
+Working Directory:
